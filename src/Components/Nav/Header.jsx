@@ -12,6 +12,9 @@ const Header = () => {
               <Nav.Link as={Link} to="/" className="h-border  m-1">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              <Nav.Link as={Link} to="/reviews" className="h-border  m-1">Reviews</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
               <Nav.Link as={Link} to="/dashboard" className="h-border  m-1">Dashboard</Nav.Link>
             </Nav.Item>
             <Nav.Item>
