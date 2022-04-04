@@ -1,7 +1,7 @@
 # SS-Review
 
 
-#Pages Features
+## Page Features
 
 - Homepage -> Banner, Maximum 3 Reviews. 
 - Reviews -> All Reviews, React Ratings.
