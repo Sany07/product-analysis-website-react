@@ -9,6 +9,7 @@ import Reviews from './Components/Reviews/Reviews';
 import Footer from './Components/Footer/Footer';
 
 import { Container } from 'react-bootstrap';
+import NotFound from './Components/404/NotFound';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/about" element={<About/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer/>
         </Container>
