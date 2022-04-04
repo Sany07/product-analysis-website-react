@@ -16,11 +16,10 @@ const Dashboard = () => {
     <>
         { data && 
             <>
-            <Row  className="justify-content-md-center my-5">
+            <Row className="justify-content-md-center my-5">
                 <Col md={6}>        
                 <h5 className='text-center fw-bold text-primary'>Month Wise Sell</h5>
                         <LineChart width={400} height={300} data={data}>
-                            {/* <Line dataKey={''}></Line> */}
                             <Line dataKey={'sell'}></Line>
                             <XAxis dataKey="month"></XAxis>
                             <Tooltip />
@@ -30,8 +29,8 @@ const Dashboard = () => {
         
                     <p className='text-center'>Sell</p>
                 </Col>
-                <Col md={6}>
-                    <h5 className='text-center fw-bold text-primary'>investment VS Revenue</h5>
+                <Col md={5}>
+                    <h5 className='text-center fw-bold text-primary'>Investment VS Revenue</h5>
                     <AreaChart width={400} height={300} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
@@ -58,7 +57,7 @@ const Dashboard = () => {
                 <Col md={6}>
                 <h5 className='text-center fw-bold text-primary'>investment VS Revenue</h5>
                 <BarChart className='ms-2' width={400} height={300} data={data}>
-                    <Bar dataKey="investment" fill="#8884d8" />
+                    <Bar dataKey="Investment" fill="#8884d8" />
                     <Bar dataKey="revenue" fill="#82ca9d" />
                     <XAxis dataKey="month"></XAxis>
                     <Tooltip />
@@ -66,10 +65,10 @@ const Dashboard = () => {
                     <YAxis></YAxis>
                 </BarChart>
                 </Col>   
-                <Col md={6}>
+                <Col md={5}>
                     <h5 className='text-center fw-bold text-primary'>investment VS Revenue</h5>
                     <PieChart width={400} height={300}>
-                    <Pie data={data} dataKey="investment" nameKey="Investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                    <Pie data={data} dataKey="Investment" nameKey="Investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="Revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                     </PieChart>
                 </Col> 
