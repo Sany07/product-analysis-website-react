@@ -7,7 +7,6 @@ const Reviews = () => {
 
     return (
         <Row>
-
             <h1 className='text-center my-5'>What Our Customers Says !</h1>
             {
                 reviews && reviews.map(review=> 

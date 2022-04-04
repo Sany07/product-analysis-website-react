@@ -50,14 +50,13 @@ const Dashboard = () => {
                     <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
                     <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
                     </AreaChart>
-                <p className='text-center'>Sell</p>
                 </Col>   
             </Row>
             <Row className="justify-content-md-center mt-5">
                 <Col md={6}>
-                <h5 className='text-center fw-bold text-primary'>investment VS Revenue</h5>
+                <h5 className='text-center fw-bold text-primary'>Investment VS Revenue</h5>
                 <BarChart className='ms-2' width={400} height={300} data={data}>
-                    <Bar dataKey="Investment" fill="#8884d8" />
+                    <Bar dataKey="investment" fill="#8884d8" />
                     <Bar dataKey="revenue" fill="#82ca9d" />
                     <XAxis dataKey="month"></XAxis>
                     <Tooltip />
@@ -66,9 +65,9 @@ const Dashboard = () => {
                 </BarChart>
                 </Col>   
                 <Col md={5}>
-                    <h5 className='text-center fw-bold text-primary'>investment VS Revenue</h5>
+                    <h5 className='text-center fw-bold text-primary'>Investment VS Revenue</h5>
                     <PieChart width={400} height={300}>
-                    <Pie data={data} dataKey="Investment" nameKey="Investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                    <Pie data={data} dataKey="investment" nameKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="Revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                     </PieChart>
                 </Col> 

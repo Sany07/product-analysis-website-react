@@ -3,7 +3,8 @@ import { Card, Col } from 'react-bootstrap';
 import ReactStars from 'react-stars';
 import './StartCard.css';
 
-function SingleCard({review}) {
+function SingleCard(props) {
+    const {review} = props;
     return (
             <Col md={4}>
                 <Card className='mb-2'>
