@@ -1,5 +1,9 @@
 .img-fix{
-    /* height: 60%; */
-    width:60%;
+    
 
+}
+
+.img-fix img{
+    height: 400px;
+    text-align: center;
 }

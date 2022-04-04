@@ -13,15 +13,15 @@ function App() {
   return (
     <>
       <Container>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Homepage/>} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/about" element={<About/>} />
-      </Routes>
-      </Container>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Homepage/>} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/about" element={<About/>} />
+        </Routes>
+        </Container>
     </>
   );
 }
